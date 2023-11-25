@@ -1,0 +1,18 @@
+{
+  "name": "api-recados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "jwt": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "sucrase": "^3.34.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  }
+}
