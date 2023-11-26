@@ -86,6 +86,10 @@ app.post('/login', async (request, response) => {
   return response.status(201).json("Usuário logado")
 });
 
+app.get('/', (request, response) => {
+  return response.json("Bem vindo! Espero que esteja tudo funcionando :)");
+});
+
 app.get('/listar-todos-usuarios', (request, response) => {
     return response.json(lista_usuarios);
 });
