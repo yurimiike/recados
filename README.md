@@ -30,20 +30,17 @@ Iniciar o projeto
 | :---------- | :--------- | :---------------------------------- |
 | `name` | `string` | **Opcional**. Nome do usuário para filtragem |
 
-#### Criar um estudante
+#### Cadastrar um usuário
 
 ```http
-  POST /students
+  POST /adicionar-usuario
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `name`      | `string` | **Obrigatório**. Nome do growdever |
-| `email`      | `string` | **Obrigatório**. Email do growdever |
-| `age`      | `number` | **Obrigatório**. Idade do growdever |
-| `turma`      | `number` | **Obrigatório**. Turma do growdever |
-| `class`      | `number` | **Obrigatório**. Turma do growdever |
-| `mentorName`      | `string` | **Obrigatório**. Nome do mentor |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
 
 #### Atualizar um estudante através do email dele
 
