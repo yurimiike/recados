@@ -9,18 +9,18 @@ let contador = 0
 let contadorRecado = 0 
 
 function adicionarExemplo(){
-    const novoUsuario = {
-        id: ++contador,
-        nome: "Main Jett Desde o Beta",
-        email: "sojogovalorant@riot.com.br",
-        senha: "exemplodesenha",
-        recados: [{
-                  id: ++contadorRecado,
-                 titulo: "É us guri pae",
-                 descricao:"Bah, né meo. Tá loko?!"
-                }]
+  const novoUsuario = {
+    id: ++contador,
+    nome: "Main Jett Desde o Beta",
+    email: "sojogovalorant@riot.com.br",
+    senha: "exemplodesenha",
+    recados:[{
+              id: ++contadorRecado,
+              titulo: "É us guri pae",
+              descricao:"Bah, né meo. Tá loko néam!"
+            }]
     }
-    lista_usuarios.push(novoUsuario)
+  lista_usuarios.push(novoUsuario)
 }
 adicionarExemplo()
 
