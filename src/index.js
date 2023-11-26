@@ -15,7 +15,7 @@ function adicionarTeste(){
         email: "sojogovalorant@riot.com.br",
         senha: "exemplodesenha",
         recados: [{
-                  id: ++contador,
+                  id: ++contadorRecado,
                  titulo: "É us guri pae",
                  descricao:"Bah, né meo. Tá loko?!"
                 }]
