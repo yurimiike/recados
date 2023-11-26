@@ -10,7 +10,13 @@ Instalar as depêndencias do projeto
 
 ```bash
   yarn install | npm install
+```
+
+```bash
   yarn add express | npm install express
+```
+
+```bash
   yarn add bcrypt | npm install bcrypt
 ```
 
