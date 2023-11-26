@@ -41,7 +41,7 @@ Iniciar o projeto
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `senha`      | `string` | **Obrigatório**. Senha do usuário |
 
 #### Listar todos os Usuários
 
