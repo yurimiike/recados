@@ -51,19 +51,17 @@ Iniciar o projeto
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `----`      | `----` | Lista todos os usuários cadastrados, sem precisar de parametro |
+| `----`      | `----` | Lista todos os usuários cadastrados, sem precisar de parâmetro |
 
-#### Cadastrar um usuário
+#### Mostrar Usuário
 
 ```http
-  POST /adicionar-usuario
+  GET /visualizar-usuario
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id`      | `string` | **Obrigatório**. Mostra um usuário especifico, encontrado pelo id |
 
 #### Cadastrar um usuário
 
