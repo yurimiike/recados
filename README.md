@@ -74,7 +74,7 @@ Iniciar o projeto
 | `id`      | `string` | **Obrigatório**. Id do usuário |
 | `nome`      | `string` | **Obrigatório**. Nome do usuário |
 | `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `senha`      | `string` | **Obrigatório**. Senha do usuário |
 
 
 #### Deletar um usuário
@@ -119,139 +119,29 @@ Iniciar o projeto
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id_usuario`      | `string` | **Obrigatório**. Id do usuário |
-| `id_recado`      | `string` | **Obrigatório**.Id do recado a ser mostrado |
+| `id_recado`      | `string` | **Obrigatório**. Id do recado a ser mostrado |
 
 
-#### Cadastrar um usuário
+#### Alterar recado
 
 ```http
-  POST /adicionar-usuario
+  PUT /alterar-recado
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id_usuario`      | `string` | **Obrigatório**. Id do usuário  que deseja alterar o recado|
+| `id_recado`      | `string` | **Obrigatório**. Id do recado que deseja alterar |
+| `titulo`      | `string` | **Obrigatório**. Novo titulo do recado |
+| `descricao`      | `string` | **Obrigatório**. Novo conteúdo do recado |
 
-#### Cadastrar um usuário
+#### Deletar recado
 
 ```http
-  POST /adicionar-usuario
+  POST /deletar-recado/
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-#### Cadastrar um usuário
-
-```http
-  POST /adicionar-usuario
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
-
-
+| `id_usuario`      | `string` | **Obrigatório**. Id do usuario onde está armazenado o recado |
+| `id_recado`      | `string` | **Obrigatório**. Id do recado que deseja apagar |
