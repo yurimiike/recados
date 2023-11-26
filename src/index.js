@@ -8,7 +8,7 @@ let lista_usuarios = []
 let contador = 0
 let contadorRecado = 0 
 
-function adicionarTeste(){
+function adicionarExemplo(){
     const novoUsuario = {
         id: ++contador,
         nome: "Main Jett Desde o Beta",
@@ -22,7 +22,7 @@ function adicionarTeste(){
     }
     lista_usuarios.push(novoUsuario)
 }
-adicionarTeste()
+adicionarExemplo()
 
 app.post('/adicionar-usuario', async (request, response) => {
   const infoRequest = request.body
@@ -88,12 +88,10 @@ app.post('/login', async (request, response) => {
 
 app.get('/listar-todos-usuarios', (request, response) => {
     return response.json(lista_usuarios);
-    
 });
 
 app.get('/visualizar-usuario', (request, response) => {
   const parametros = request.query
-
 
   if (parametros.id === undefined || parametros.id === "") {
     return response.status(400).json("Informe um id válido")
@@ -233,7 +231,6 @@ app.get('/visualizar-recado', (request, response) => {
   }
 
   return response.json(recado);
-  
 });
 
 app.put('/alterar-recado', async (request, response) => {
