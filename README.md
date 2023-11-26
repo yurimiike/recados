@@ -53,7 +53,7 @@ Iniciar o projeto
 | :---------- | :--------- | :------------------------------------------ |
 | `----`      | `----` | Lista todos os usuários cadastrados, sem precisar de parâmetro |
 
-#### Mostrar Usuário
+#### Visualizar Usuário
 
 ```http
   GET /visualizar-usuario
@@ -61,67 +61,66 @@ Iniciar o projeto
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. Mostra um usuário especifico, encontrado pelo id |
+| `id`      | `string` |  Visualiza um usuário especifico, encontrado pelo id |
 
-#### Cadastrar um usuário
+#### Alterar dados de Usuário
 
 ```http
-  POST /adicionar-usuario
+  PUT /alterar-usuario
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. Id do usuário |
 | `nome`      | `string` | **Obrigatório**. Nome do usuário |
 | `email`      | `string` | **Obrigatório**. Email do usuário |
 | `senha`      | `string` | **Obrigatório**. Idade do usuário |
 
-#### Cadastrar um usuário
+
+#### Deletar um usuário
 
 ```http
-  POST /adicionar-usuario
+  DELETE /deletar-usuario/
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id_usuario`      | `string` | **Obrigatório**. Id do usuário que deseja deletar |
 
-#### Cadastrar um usuário
+
+#### Adicionar recado
 
 ```http
-  POST /adicionar-usuario
+  POST /adicionar-recado
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id_usuario`      | `string` | **Obrigatório**. Id do usuário |
+| `titulo`      | `string` | **Obrigatório**. Titulo do recado |
+| `descricao`      | `string` | **Obrigatório**. Conteúdo do recado |
 
-#### Cadastrar um usuário
+#### Listar recados
 
 ```http
-  POST /adicionar-usuario
+  GET /listar-recado/:id?
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id`      | `string` | Lista todos os recados de um usuário especifico, encontrado pelo id |
 
-#### Cadastrar um usuário
+#### Visualizar recado especifico
 
 ```http
-  POST /adicionar-usuario
+  GET /visualizar-recado
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `nome`      | `string` | **Obrigatório**. Nome do usuário |
-| `email`      | `string` | **Obrigatório**. Email do usuário |
-| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+| `id_usuario`      | `string` | **Obrigatório**. Id do usuário |
+| `id_recado`      | `string` | **Obrigatório**.Id do recado a ser mostrado |
+
 
 #### Cadastrar um usuário
 
