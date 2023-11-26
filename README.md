@@ -20,15 +20,38 @@ Iniciar o projeto
 
 ## Documentação da API
 
-#### Retorna todos os estudantes, com filtragem por nome opcional
+#### Cadastrar um usuário
 
 ```http
-  GET /students/:name?
+  POST /adicionar-usuario
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `name` | `string` | **Opcional**. Nome do usuário para filtragem |
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Senha do usuário |
+
+#### Realizar o login de Usuário
+
+```http
+  POST /login
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Listar todos os Usuários
+
+```http
+  GET /listar-todos-usuarios
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `----`      | `----` | Lista todos os usuários cadastrados, sem precisar de parametro |
 
 #### Cadastrar um usuário
 
@@ -42,27 +65,196 @@ Iniciar o projeto
 | `email`      | `string` | **Obrigatório**. Email do usuário |
 | `senha`      | `string` | **Obrigatório**. Idade do usuário |
 
-#### Atualizar um estudante através do email dele
+#### Cadastrar um usuário
 
 ```http
-  PUT /students/email
+  POST /adicionar-usuario
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `name`      | `string` | **Opcional**. Nome do growdever |
-| `email`      | `string` | **Opcional**. Email do growdever |
-| `age`      | `number` | **Opcional**. Idade do growdever |
-| `turma`      | `number` | **Opcional**. Turma do growdever |
-| `class`      | `number` | **Opcional**. Turma do growdever |
-| `mentorName`      | `string` | **Opcional**. Nome do mentor |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
 
-#### Apagar um estudante através do email dele
+#### Cadastrar um usuário
 
 ```http
-  DELETE /students/email
+  POST /adicionar-usuario
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `email`      | `string` | **Obrigatório**. Email do growdever |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+#### Cadastrar um usuário
+
+```http
+  POST /adicionar-usuario
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `nome`      | `string` | **Obrigatório**. Nome do usuário |
+| `email`      | `string` | **Obrigatório**. Email do usuário |
+| `senha`      | `string` | **Obrigatório**. Idade do usuário |
+
+
