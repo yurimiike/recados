@@ -49,9 +49,9 @@ Iniciar o projeto
   GET /listar-todos-usuarios
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `----`      | `----` | Lista todos os usuários cadastrados, sem precisar de parâmetro |
+| Descrição                                   |
+| :------------------------------------------ |
+| Lista todos os usuários cadastrados, sem precisar de parâmetro |
 
 #### Visualizar Usuário
 
