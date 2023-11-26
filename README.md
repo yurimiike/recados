@@ -1,15 +1,9 @@
 # API de Recados
 
-Clonar o repositório
+Link para teste no render
 
 ```bash
-  git clone https://github.com/brunomestanza/backend-1-node.git
-```
-
-Entrar na pasta do projeto
-
-```bash
-  cd backend-1-node
+  https://teste-d86f.onrender.com
 ```
 
 Instalar as depêndencias do projeto
