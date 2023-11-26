@@ -13,11 +13,7 @@ Instalar as depêndencias do projeto
 ```
 
 ```bash
-  yarn add express | npm install express
-```
-
-```bash
-  yarn add bcrypt | npm install bcrypt
+  yarn add express bcrypt | npm install express bcrypt
 ```
 
 Iniciar o projeto
