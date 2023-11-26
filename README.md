@@ -138,7 +138,7 @@ Iniciar o projeto
 #### Deletar recado
 
 ```http
-  POST /deletar-recado/
+  DELETE /deletar-recado/
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
