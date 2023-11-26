@@ -156,39 +156,19 @@ app.delete('/deletar-usuario/', (request, response) => {
   return response.status(200).json("Usuario excluído com sucesso")
 });
 
-app.delete('/deletar-recado/', (request, response) => {
-  const parametros = request.query
-  const idRecado = parametros.id_recado
-  const idUsuario= parametros.id_usuario
-  let usuario = lista_usuarios.find(usuario => usuario.id == idUsuario)
-
-  if (!usuario){
-     return response.status(400).json("Usuário inválido")
-  }
-
-  let indexRecado = usuario.recados.findIndex(recado => recado.id == idRecado)
-
-  if (indexRecado === -1) {
-      return response.status(400).json("Recado não encontrado")
-  }
-  
-  usuario.recados = usuario.recados.filter(recado => recado.id != idRecado)
-  return response.status(200).json('Recado excluído com sucesso')
-});
-
 app.post('/adicionar-recado', (request, response) => {
   const infoRequest = request.body
 
   if (infoRequest.id_usuario === undefined || infoRequest.id_usuario === "") {
-    return response.status(400).json("Informe um id correto")
+    return response.status(400).json("Dados inválidos")
   }
 
   if (infoRequest.titulo === undefined || infoRequest.titulo === "") {
-    return response.status(400).json("Informe um nome válido")
+    return response.status(400).json("Dados inválidos")
   }
 
   if (infoRequest.descricao === undefined || infoRequest.descricao === "") {
-    return response.status(400).json("Informe um email válido")
+    return response.status(400).json("Dados inválidos")
   }
 
   let usuario = lista_usuarios.find(usuario => usuario.id == infoRequest.id_usuario)
@@ -214,7 +194,7 @@ app.get('/listar-recado/:id?', (request, response) => {
   if (usuario !== undefined){
     return response.status(201).json(usuario.recados)
   } else {
-    return response.status(201).json(parametros.id)
+    return response.status(400).json("Recado não encontrado")
   }
 });
 
@@ -270,6 +250,26 @@ app.put('/alterar-recado', async (request, response) => {
 
   usuario.recados[index] = recado_modificado
   return response.status(201).json("Recado alterarado com sucesso")
+});
+
+app.delete('/deletar-recado/', (request, response) => {
+  const parametros = request.query
+  const idRecado = parametros.id_recado
+  const idUsuario= parametros.id_usuario
+  let usuario = lista_usuarios.find(usuario => usuario.id == idUsuario)
+
+  if (!usuario){
+     return response.status(400).json("Usuário inválido")
+  }
+
+  let indexRecado = usuario.recados.findIndex(recado => recado.id == idRecado)
+
+  if (indexRecado === -1) {
+      return response.status(400).json("Recado não encontrado")
+  }
+  
+  usuario.recados = usuario.recados.filter(recado => recado.id != idRecado)
+  return response.status(200).json('Recado excluído com sucesso')
 });
 
 app.listen(8080, () => console.log("Recadinhos Funcionandinho"));
